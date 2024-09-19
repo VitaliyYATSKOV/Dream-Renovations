@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    background-image: url(/fon.jpg);
+    color: rgb(246, 233, 233);
+    font-family: 'Roboto', sans-serif;
+}
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+}
+.dr {
+    width: 60px;
+    height: auto;
+    display: flex;
+    position: relative;
+    bottom: 330px;
+    left: -11%;
+}
+header {
+  
+    padding: 60px 0;
+    text-align: center;
+    position: relative;
+}
+header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Темний напівпрозорий шар для покращення видимості тексту */
+    z-index: 1;
+}
+
+header .container {
+    position: relative;
+    z-index: 2;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.btn, .btn-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #e76f51;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.btn-secondary {
+    background-color: #264653;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Відстань між картками */
+
+}
+
+.card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex-basis: 30%; /* Ширина карток */
+    text-align: center;
+    margin-bottom: 20px; /* Відступ знизу картки */
+    color: black;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+.card:hover {
+    transform: scale(1.05); /* Збільшує картку на 5% при наведенні */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Змінює тінь при наведенні */
+}
+.card h3 {
+    margin-top: 0; /* Прибирає верхній відступ заголовка */
+}
+
+.card p {
+    margin-bottom: 0; /* Прибирає нижній відступ абзацу */
+}
+
+@media (max-width: 768px) {
+    .card {
+        flex-basis: 45%; /* Змінює ширину карток на менших екранах */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        flex-basis: 100%; /* Змінює ширину карток на дуже малих екранах */
+    }
+}
+.services-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.service-box {
+    flex-basis: 22%;
+    background-color: #f9f9f9;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    color: black;
+}
+
+.service-box img {
+    width: 100%;
+    height: 200px; /* Фіксована висота для всіх зображень */
+    object-fit: cover; /* Обрізає і масштабує зображення, щоб вони заповнювали блок пропорційно */
+    border-radius: 10px;
+}
+
+.service-box:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .service-box {
+        flex-basis: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .service-box {
+        flex-basis: 100%;
+    }
+}і
+
+
+.testimonials {
+    display: flex;
+    justify-content: space-around;
+    background-color: #f4f4f9;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.testimonial-item {
+    width: 45%;
+    text-align: left;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
