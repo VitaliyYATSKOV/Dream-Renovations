@@ -4,7 +4,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     line-height: 1.6;
-    background-image: url(/fon.jpg);
+    background-image: url(fon.jpg);
     color: rgb(246, 233, 233);
     font-family: 'Roboto', sans-serif;
 }
