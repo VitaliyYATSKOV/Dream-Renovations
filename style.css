@@ -7,9 +7,11 @@ body {
     background-image: url(fon.jpg);
     color: rgb(246, 233, 233);
     font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
