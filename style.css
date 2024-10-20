@@ -16,13 +16,6 @@ html {
 h1, h2, h3 {
     font-family: 'Montserrat', sans-serif;
 }
-.dr {
-    width: 60px;
-    height: auto;
-    display: flex;
-    position: relative;
-    bottom: 330px;
-    left: -11%;
 }
 header {
   
